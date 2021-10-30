@@ -1,0 +1,8 @@
+{
+  "name": "whats-up",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "cd441566"
+}
