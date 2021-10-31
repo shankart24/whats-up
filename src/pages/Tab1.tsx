@@ -14,6 +14,8 @@ import {
 	IonLabel,
 	IonButton,
 	IonImg,
+	IonSearchbar,
+	IonText,
 } from "@ionic/react";
 import ExploreContainer from "../components/ExploreContainer";
 import "./Tab1.css";
@@ -23,16 +25,20 @@ const Tab1: React.FC = () => {
 		<IonPage>
 			<IonHeader>
 				<IonToolbar>
-					<IonTitle>Tab 1</IonTitle>
+					<IonTitle>Newz</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 			<IonContent fullscreen>
 				<IonHeader collapse="condense">
 					<IonToolbar>
-						<IonTitle size="large">Tab 1</IonTitle>
+						<IonTitle size="large">Newz</IonTitle>
 					</IonToolbar>
 				</IonHeader>
 				<IonContent>
+					<h1 style={{ margin: "20px", fontWeight: 700 }}>What are you reading today?</h1>
+					<IonToolbar>
+						<IonSearchbar animated={true}></IonSearchbar>
+					</IonToolbar>
 					<IonCard>
 						<IonCardHeader>
 							<div style={{ marginBottom: "15px" }}>
@@ -43,7 +49,7 @@ const Tab1: React.FC = () => {
 								/>
 							</div>
 							<IonCardSubtitle>Introducing</IonCardSubtitle>
-							<IonCardTitle>iPhone Pro 13 Max</IonCardTitle>
+							<IonCardTitle color="primary">iPhone Pro 13 Max</IonCardTitle>
 						</IonCardHeader>
 
 						<IonCardContent>
